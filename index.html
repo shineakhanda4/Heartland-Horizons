@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heartland Horizons SMP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --glass: rgba(255, 255, 255, 0.08);
+      --highlight: #00ffe0;
+      --gradient: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      --button-gradient: linear-gradient(45deg, #00ffe0, #0077ff);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--gradient);
+      color: #fff;
+      line-height: 1.6;
+   header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: transparent;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: transparent;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+
+header h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00ffe0;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header h1 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+  header h1 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+    .card {
+      background: var(--glass);
+      border-radius: 20px;
+      padding: 2rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 0 20px rgba(0, 255, 224, 0.1);
+      backdrop-filter: blur(14px);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    img.banner {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 20px rgba(0, 255, 224, 0.2);
+    }
+
+    .highlight {
+      color: var(--highlight);
+      font-weight: bold;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    a {
+      color: var(--highlight);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .server-info {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+      border-left: 4px solid var(--highlight);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      margin-top: 1rem;
+      border-radius: 30px;
+      background: var(--button-gradient);
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--glass);
+      backdrop-filter: blur(10px);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      section {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+  <h1>Heartland Horizons SMP</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#donate">Donate</a>
+  </nav>
+</header>
+
+  <section id="home">
+    <img src="photo.jpg" alt="Heartland Horizons Banner" class="banner" />
+    <div class="card">
+      <h2>Welcome to Heartland Horizons</h2>
+      <p>Step into a world where imagination meets economy. Heartland Horizons SMP is a private Minecraft server designed for players who love building, trading, and collaborating.</p>
+      <ul>
+        <li>💰 Player-driven economy with custom shops</li>
+        <li>🎉 Weekly events, build contests & treasure hunts</li>
+        <li>🏗️ Town creation, land claims & team projects</li>
+        <li>🛡️ Friendly moderation & active community</li>
+        <li>🌟 Seasonal updates & surprise features</li>
+      </ul>
+
+      <div class="server-info">
+        <h3>🖥️ Server IPs</h3>
+        <p><span class="highlight">Java Edition:</span> play.hhsmp.fun</p>
+        <p><span class="highlight">Bedrock Edition:</span> play.hhsmp.fun</p>
+        <p><span class="highlight">Port:</span> 5837</p>
+      </div>
+
+      <a class="btn" href="https://discord.gg/y7wjhaEs" target="_blank">Join Discord</a>
+      <a class="btn" href="https://chat.whatsapp.com/FPPtqq2BvpqDY7cVRMNmj9?mode=ac_t" target="_blank">Join WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="card">
+      <h2>About Us</h2>
+      <p><span class="highlight">Owner:</span> Shine Akhanda</p>
+      <p><span class="highlight">Co-Owners:</span> Arefin Rasin, Arian Rahman</p>
+      <p><span class="highlight">Admin:</span> Sheikh Ibrahim</p>
+      <p>Heartland Horizons SMP is more than just a server—it's a community. We believe in creativity, collaboration, and crafting unforgettable experiences. Whether you're a builder, explorer, or redstone genius, you'll find your place here.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>Contact Us</h2>
+      <p>Have questions or ideas? Reach out anytime!</p>
+      <ul>
+        <li>📱 <a href="https://chat.whatsapp.com/FPPtqq2BvpqDY7cVRMNmj9?mode=ac_t" target="_blank">WhatsApp Group</a></li>
+        <li>💬 <a href="https://discord.gg/y7wjhaEs" target="_blank">Discord Server</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="donate">
+    <div class="card">
+      <h2>Support the Server</h2>
+      <p>Help us grow and improve Heartland Horizons SMP. Your donations go toward hosting, plugins, and community events.</p>
+      <p><span class="highlight">Donate via Nagad:</span> 01302776234</p>
+      <p>Every contribution makes a difference. Thank you for supporting our journey!</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Heartland Horizons SMP. Crafted with ❤️ by Shine Akhanda and team.</p>
+  </footer>
+
+</body>
+</html>
